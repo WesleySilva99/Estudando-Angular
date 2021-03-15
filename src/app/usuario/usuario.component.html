@@ -1,7 +1,10 @@
-<p>usuario works!</p>
-<div>
-  Nome do Usuario:
-</div>
-<div>
-  {{usuario.nome}}
-</div>
+<table border="1">
+  <tr>
+    <th>nome</th>
+    <th>email</th>
+  </tr>
+  <tr *ngFor="let usuario of usuarios">
+    <td>{{usuario.nome}}</td>
+    <td>{{usuario.email}}</td>
+  </tr>
+</table>

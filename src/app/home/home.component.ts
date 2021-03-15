@@ -9,12 +9,10 @@ import {UsuarioService} from "../usuario.service";
 })
 export class HomeComponent implements OnInit {
 
-  public usuario:Usuario;
-
   constructor(private usuarioService:UsuarioService) { }
 
   ngOnInit(): void {
-    this.usuario = this.usuarioService.getUsuario();
+   // this.usuario = this.usuarioService.getUsuario();
   }
 
 }
